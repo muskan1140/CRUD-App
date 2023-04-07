@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Crud Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset>
+        <legend>
+          <h1>FORM</h1>
+        </legend>
+       <form id="form">
+           <input type="text" id="name" name="name" placeholder="NAME"><br><br>
+           <input type="text" id="age" name="name" placeholder="AGE"><br><br>
+           <input type="text" id="email" name="name" placeholder="E-MAIL"><br><br>
+            
+           <div class="buttons">
+              <input type="button" class="submit" value="Submit" id="btn" onclick="Submit()">
+              <input type="reset" class="reset" value="Reset" id="btn">
+           </div>
+        </form>
+    </fieldset>
+    <br>
+    <div id="msg"></div>
+
+    <fieldset>
+        <legend>
+          <h1>Data from Local Storage</h1>
+
+        </legend>
+        <table border="2" id="table">
+            <tr>
+                <td class="col">Name</td>
+                <td class="col">Age</td>
+                <td class="col">E-mail</td>
+                <td class="col">Action</td>
+
+
+            </tr>
+        </table>
+    </fieldset>
+
+</body>
+<script src ="script.js"></script>
+</html>
